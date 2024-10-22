@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide/Show Navigation Menu Based on Screen Width</title>
+    <style>
+
+        @media screen and (width>=500px){
+            ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            background-color: brown;
+            height: 10vh;
+            align-items: center;
+        }
+        }
+
+        @media screen and (width<500px){
+            ul{
+                display: none;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>News</li>
+            <li>Project</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+</body>
+</html>
